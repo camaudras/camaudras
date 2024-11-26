@@ -119,8 +119,14 @@ footer p {
 
 /* Form Styling */
 .form-container {
-    margin-top: 2rem;
-    text-align: left; /* Left justify the form */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+iframe {
+    border: 2px solid #ccc;
+    border-radius: 8px;
 }
 
 .contact-section form input, 
