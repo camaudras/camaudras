@@ -1,11 +1,15 @@
 /* General Styles */
 body {
-    font-family: "App Clear Sharp";
+    font-family: 'Ramaraja', serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+/* You can also apply Ramaraja to specific elements, for example: */
+h1, h2 {
+    font-family: 'Ramaraja', serif;
 }
 
 /* Container */
