@@ -99,14 +99,28 @@ footer p {
     margin: 0;
 }
 
-/* Contact Form */
+/* Contact Section */
 .contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
     padding: 2rem;
+}
+
+.bio-text {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Services List */
+.bio-text ul {
+    padding-left: 20px;
+}
+
+/* Form Styling */
+.form-container {
+    margin-top: 2rem;
+    text-align: left; /* Left justify the form */
 }
 
 .contact-section form input, 
