@@ -57,7 +57,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('your-image.jpg') no-repeat top center; /* Replace with your image URL */
+    background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat top center; /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the section */
     background-position: top; /* Focuses on the upper part of the image */
     height: 50vh; /* Makes the section half the height of the viewport */
