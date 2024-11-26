@@ -52,7 +52,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #5198f5; /* Lighter blue on hover */
+    color: #000000; /* Lighter blue on hover */
 }
 
 /* Hero Section */
