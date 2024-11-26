@@ -63,7 +63,7 @@ header nav ul li a:hover {
     text-align: center;
     padding: 4rem 0;
     background-blend-mode: overlay; /* Optional: improves text readability */
-    background-color: rgba(26, 115, 232, 0.7); /* Optional: semi-transparent overlay */
+    /*background-color: rgba(26, 115, 232, 0.7); /* Optional: semi-transparent overlay */
 }
 
 .hero h2 {
