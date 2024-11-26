@@ -58,12 +58,13 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat center center; /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the entire section */
+    background-size: contain; /* Ensures the whole image is visible */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-color: #1a73e8; /* Fallback color for browsers that can't load the image */
     color: white;
     text-align: center;
     padding: 4rem 0;
-    background-blend-mode: overlay; /* Optional: improves text readability */
-    /*background-color: rgba(26, 115, 232, 0.7); /* Optional: semi-transparent overlay */
 }
 
 .hero h2 {
