@@ -7,7 +7,6 @@
     <title>Contact Cam Audras</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://github.com/camaudras/camaudras/blob/main/violin%20favicon.png?raw=true" type="image/x-icon">
-    <!-- Link to Google Fonts for Ramaraja font -->
     <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,7 +28,6 @@
             <div class="bio-text">
                 <h2>Contact Me</h2>
                 
-                <!-- Services List -->
                 <p><strong>Available for:</strong></p>
                 <ul>
                     <li>Private lessons in the Santa Barbara area - all levels</li>
@@ -39,10 +37,11 @@
 
                 <!-- Contact Form -->
                 <div class="form-container">
-                    <form action="mailto:audras@alumni.usc.edu" method="POST" enctype="text/plain">
+                    <form action="process_form.php" method="POST" enctype="multipart/form-data">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <input type="file" name="file" accept=".jpg,.jpeg,.png,.pdf" placeholder="Attach a file (optional)">
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
