@@ -21,7 +21,7 @@ h1, h2 {
 
 /* Header */
 header {
-    background-color: #1a73e8;
+    background-color: #09537a;
     color: white;
     padding: 1.5rem 0;
     text-align: center;
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 
 /* Buttons */
 .button {
-    background-color: #ffd54f;
+    background-color: #6eb6ff;
     color: #333;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
@@ -84,7 +84,7 @@ header nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #ffca28;
+    background-color: #9ccdff;
 }
 
 /* Footer */
