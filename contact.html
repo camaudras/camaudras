@@ -4,31 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Cam Audras, professional violist.">
-    <title>Cam Audras - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Cam Audras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        nav {
+            background: #333;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: #e94e77;
+        }
+        .contact-section {
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        .contact-section h2 {
+            color: #4a90e2;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: #e94e77;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Cam Audras</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
+    <div class="contact-section">
         <h2>Contact Me</h2>
-        <p>Ready to create unforgettable musical moments? I’d love to hear from you! Fill out the form below to get in touch.</p>
-        <form action="https://formspree.io/f/your_form_id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <form action="https://formspree.io/f/moqbvqlj" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Cam Audras. All rights reserved.</p>
