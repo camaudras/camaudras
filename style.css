@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'App Clear Sharp', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -20,21 +20,20 @@ header {
     background-color: #1a73e8;
     color: white;
     padding: 1.5rem 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    font-weight: 700;
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
 header nav ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 0;
-    list-style: none;
-    margin-top: 1rem;
 }
 
 header nav ul li {
@@ -42,11 +41,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 1rem;
+    text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
@@ -55,36 +53,33 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 4rem 0;
     background: linear-gradient(to bottom, #1a73e8, #539bf5);
     color: white;
+    text-align: center;
+    padding: 4rem 0;
 }
 
 .hero h2 {
     font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 /* Buttons */
-a.button {
-    display: inline-block;
+.button {
     background-color: #ffd54f;
     color: #333;
     padding: 0.8rem 1.5rem;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+    transition: background 0.3s;
 }
 
-a.button:hover {
+.button:hover {
     background-color: #ffca28;
 }
 
@@ -97,6 +92,29 @@ footer {
 }
 
 footer p {
-    font-size: 0.9rem;
     margin: 0;
+}
+
+/* Contact Form */
+.contact-section form input, 
+.contact-section form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section form button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-section form button:hover {
+    background-color: #539bf5;
 }
