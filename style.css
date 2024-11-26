@@ -21,7 +21,7 @@ h1, h2 {
 
 /* Header */
 header {
-    background-color: #09537a;
+    background-color: #09537a; /* Deep blue header */
     color: white;
     padding: 1.5rem 0;
     text-align: center;
@@ -52,12 +52,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #5198f5;
+    color: #5198f5; /* Lighter blue on hover */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom, #1a73e8, #539bf5);
+    background: linear-gradient(to bottom, #1a73e8, #539bf5); /* Gradual blue gradient */
     color: white;
     text-align: center;
     padding: 4rem 0;
@@ -74,7 +74,7 @@ header nav ul li a:hover {
 
 /* Buttons */
 .button {
-    background-color: #6eb6ff;
+    background-color: #6eb6ff; /* Soft blue button */
     color: #333;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
@@ -84,12 +84,12 @@ header nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #9ccdff;
+    background-color: #9ccdff; /* Lighter blue on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #333; /* Dark footer */
     color: #ccc;
     padding: 1rem 0;
     text-align: center;
@@ -110,7 +110,7 @@ footer p {
 }
 
 .contact-section form button {
-    background-color: #1a73e8;
+    background-color: #1a73e8; /* Blue button for form submission */
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -120,5 +120,42 @@ footer p {
 }
 
 .contact-section form button:hover {
-    background-color: #539bf5;
+    background-color: #539bf5; /* Lighter blue when hovered */
+}
+
+/* Bio Section */
+.bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.bio-image {
+    flex: 1;
+    max-width: 300px; /* Adjust the size of the image */
+    text-align: center;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio-text {
+    flex: 2;
+    max-width: 800px;
+}
+
+.bio-text h2 {
+    font-size: 2rem;
+    color: #09537a; /* Deep blue for the bio heading */
+    margin-bottom: 1rem;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    color: #444;
 }
