@@ -199,3 +199,21 @@ iframe {
     font-size: 1.1rem;
     color: #444;
 }
+
+/* Mobile Media Query - Reorder Bio Image and Text */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stacks the bio image and text vertically */
+        text-align: center; /* Centers content on mobile */
+    }
+
+    .bio-text {
+        flex: none; /* Removes the flex-grow on mobile for the bio text */
+        max-width: 100%; /* Ensures the text takes up full width */
+    }
+
+    .bio-image {
+        order: -1; /* Moves the image to the top on mobile */
+        margin-bottom: 1.5rem; /* Adds space below the image */
+    }
+}
