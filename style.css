@@ -217,3 +217,10 @@ iframe {
         margin-bottom: 1.5rem; /* Adds space below the image */
     }
 }
+
+/* Desktop Media Query - Bring Bio Image Closer to Text */
+@media (min-width: 769px) {
+    .bio-container {
+        gap: 1rem; /* Reduces the gap between image and text on larger screens */
+    }
+}
