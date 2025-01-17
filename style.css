@@ -68,6 +68,7 @@ header nav ul li a:hover {
     justify-content: center; /* Vertically centers content */
     align-items: center; /* Horizontally centers content */
 }
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -92,6 +93,45 @@ header nav ul li a:hover {
     background-color: #9ccdff; /* Lighter blue on hover */
 }
 
+/* Listen/Watch Page */
+.listen-watch {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.listen-watch h2 {
+    font-size: 2.5rem;
+    color: #09537a; /* Deep blue */
+    margin-bottom: 1.5rem;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.media-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.media-item iframe, .media-item video {
+    width: 100%;
+    height: auto;
+}
+
+.media-item p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #444;
+    text-align: left;
+}
+
 /* Footer */
 footer {
     background-color: #333; /* Dark footer */
@@ -104,132 +144,9 @@ footer p {
     margin: 0;
 }
 
-/* Contact Section */
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-/* Center "Contact Cam" heading */
-.contact-section h2 {
-    text-align: center; /* Center the "Contact Cam" heading */
-}
-
-.bio-text {
-    text-align: left;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto; /* Centers the bio-text block horizontally */
-}
-
-/* Services List */
-.bio-text ul {
-    text-align: left; /* Aligns the list to the left */
-    margin: 0 auto;
-    max-width: 600px; /* Limits the width of the list */
-    padding-left: 20px;
-}
-
-.bio-text p {
-    text-align: left; /* Keeps paragraphs left-aligned in other sections */
-}
-
-/* Form Styling */
-.form-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-iframe {
-    border: 2px solid #ccc;
-    border-radius: 8px;
-}
-
-.contact-section form input, 
-.contact-section form textarea {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-section form button {
-    background-color: #1a73e8; /* Blue button for form submission */
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact-section form button:hover {
-    background-color: #539bf5; /* Lighter blue when hovered */
-}
-
-/* Bio Section */
-.bio-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-}
-
-.bio-image {
-    flex: 1;
-    max-width: 300px; /* Adjust the size of the image */
-    text-align: center;
-}
-
-.bio-image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.bio-text {
-    flex: 2;
-    max-width: 800px;
-}
-
-.bio-text h2 {
-    font-size: 2rem;
-    color: #09537a; /* Deep blue for the bio heading */
-    margin-bottom: 1rem;
-}
-
-.bio-text p {
-    font-size: 1.1rem;
-    color: #444;
-}
-
-/* Mobile Media Query - Reorder Bio Image and Text */
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-    .bio-container {
-        flex-direction: column; /* Stacks the bio image and text vertically */
-        text-align: center; /* Centers content on mobile */
-    }
-
-    .bio-text {
-        flex: none; /* Removes the flex-grow on mobile for the bio text */
-        max-width: 100%; /* Ensures the text takes up full width */
-    }
-
-    .bio-image {
-        order: -1; /* Moves the image to the top on mobile */
-        margin-bottom: 1.5rem; /* Adds space below the image */
-    }
-}
-
-/* Desktop Media Query - Bring Bio Image Closer to Text */
-@media (min-width: 769px) {
-    .bio-container {
-        gap: 1rem; /* Reduces the gap between image and text on larger screens */
+    .media-gallery {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens */
     }
 }
