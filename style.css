@@ -1,4 +1,4 @@
-/* =========================
+/* ========================= 
    Global Typography (Clean Version)
    ========================= */
 
@@ -36,7 +36,10 @@ h1, h2 {
     margin: 0 auto;
 }
 
-/* Header */
+/* =========================
+   Header / Navigation
+   ========================= */
+
 header {
     background-color: #09537a;
     color: white;
@@ -65,11 +68,25 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 header nav ul li a:hover {
     color: #9ccdff;
+}
+
+/* Top nav Contact button */
+header nav ul li a.nav-contact {
+    background-color: #6eb6ff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+header nav ul li a.nav-contact:hover {
+    background-color: #9ccdff;
+    color: #333;
 }
 
 /* =========================
@@ -117,11 +134,44 @@ header nav ul li a:hover {
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .button:hover {
     background-color: #9ccdff;
+}
+
+/* =========================
+   Floating Contact Button
+   ========================= */
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6eb6ff;
+    color: #333;
+    padding: 0.75rem 1.2rem;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.floating-contact:hover {
+    background-color: #9ccdff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .floating-contact {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        bottom: 16px;
+        right: 16px;
+    }
 }
 
 /* =========================
@@ -161,17 +211,18 @@ header nav ul li a:hover {
 }
 
 /* =========================
-   Responsive YouTube Iframes for Media Page
+   Responsive YouTube Iframes
    ========================= */
+
 .responsive-iframe {
     position: relative;
     width: 100%;
-    max-width: 900px;      /* Bigger max width for desktop */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    max-width: 900px;
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 8px;
-    margin: 0 auto;        /* Center horizontally */
+    margin: 0 auto;
 }
 
 .responsive-iframe iframe {
@@ -183,7 +234,7 @@ header nav ul li a:hover {
     border: 0;
 }
 
-/* Media gallery adjustments for desktop */
+/* Desktop media gallery */
 @media (min-width: 769px) {
     .media-gallery {
         display: flex;
@@ -193,34 +244,19 @@ header nav ul li a:hover {
     }
 
     .media-item {
-        flex: 0 1 45%; /* Each video takes up ~45% of row */
+        flex: 0 1 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .media-item p {
-        text-align: center; /* Center captions on desktop */
+        text-align: center;
     }
 }
 
 /* =========================
-   Footer
-   ========================= */
-
-footer {
-    background-color: #333;
-    color: #ccc;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* =========================
-   Bio Page Styles
+   Bio Page
    ========================= */
 
 .bio-container {
@@ -254,6 +290,21 @@ footer p {
 }
 
 /* =========================
+   Footer
+   ========================= */
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
    Responsive Adjustments
    ========================= */
 
@@ -264,7 +315,6 @@ footer p {
         text-align: left;
     }
 
-    /* Mobile-only hero height adjustment */
     .hero {
         height: 50vh;
         background-position: center center;
@@ -280,11 +330,10 @@ footer p {
 }
 
 /* =========================
-   Desktop-only Contact Page Centering
+   Contact Page (Desktop)
    ========================= */
 
 @media (min-width: 769px) {
-
     .contact-section {
         display: flex;
         justify-content: center;
