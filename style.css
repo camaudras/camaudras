@@ -57,16 +57,16 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat top center; /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: left center; /* Focuses on the upper part of the image */
-    height: 80vh; /* Makes the section half the height of the viewport */
+    background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat top center;
+    background-size: cover;
+    background-position: left center;
+    height: 80vh;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centers content */
-    align-items: center; /* Horizontally centers content */
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h2 {
@@ -80,7 +80,7 @@ header nav ul li a:hover {
 
 /* Buttons */
 .button {
-    background-color: #6eb6ff; /* Soft blue button */
+    background-color: #6eb6ff;
     color: #333;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
@@ -90,7 +90,7 @@ header nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #9ccdff; /* Lighter blue on hover */
+    background-color: #9ccdff;
 }
 
 /* Listen/Watch Page */
@@ -102,7 +102,7 @@ header nav ul li a:hover {
 
 .listen-watch h2 {
     font-size: 2.5rem;
-    color: #09537a; /* Deep blue */
+    color: #09537a;
     margin-bottom: 1.5rem;
 }
 
@@ -120,7 +120,8 @@ header nav ul li a:hover {
     overflow: hidden;
 }
 
-.media-item iframe, .media-item video {
+.media-item iframe,
+.media-item video {
     width: 100%;
     height: auto;
 }
@@ -134,7 +135,7 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #333; /* Dark footer */
+    background-color: #333;
     color: #ccc;
     padding: 1rem 0;
     text-align: center;
@@ -144,9 +145,53 @@ footer p {
     margin: 0;
 }
 
-/* Media Query for Smaller Screens */
+/* =========================
+   Bio Page Styles
+   ========================= */
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.bio-image {
+    flex: 0 0 300px;
+}
+
+.bio-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Optional polish */
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h2 {
+    margin-top: 0;
+}
+
+/* Mobile-friendly Bio Layout */
 @media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .bio-image {
+        margin-bottom: 20px;
+    }
+
     .media-gallery {
-        grid-template-columns: 1fr; /* Stacks items on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
