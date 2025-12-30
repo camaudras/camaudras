@@ -275,12 +275,12 @@ footer p {
 
     .contact-section {
         display: flex;
-        justify-content: left;
+        justify-content: center;
     }
 
     .contact-section .bio-text {
         max-width: 800px;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-section ul {
