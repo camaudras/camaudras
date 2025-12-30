@@ -230,6 +230,7 @@ footer p {
 @media (max-width: 768px) {
     .hero {
         height: 55vh;
+        background-position: center center;
     }
 }
 
