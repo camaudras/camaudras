@@ -1,18 +1,33 @@
-/* General Styles */
+/* =========================
+   Global Typography (Clean Version)
+   ========================= */
+
+html {
+    font-size: 18px; /* Global baseline for entire site */
+}
+
 body {
     font-family: 'Ramaraja', serif;
     margin: 0;
     padding: 0;
     color: #333;
     line-height: 1.7;
-    font-size: 1.15rem;
     font-weight: 400;
 }
 
-/* You can also apply Ramaraja to specific elements, for example: */
+p {
+    font-size: 1rem; /* Inherits from html = 18px */
+    font-weight: 400;
+}
+
+/* Headings */
 h1, h2 {
     font-family: 'Ramaraja', serif;
 }
+
+/* =========================
+   Layout / Structure
+   ========================= */
 
 /* Container */
 .container {
@@ -23,7 +38,7 @@ h1, h2 {
 
 /* Header */
 header {
-    background-color: #09537a; /* Deep blue header */
+    background-color: #09537a;
     color: white;
     padding: 1.5rem 0;
     text-align: center;
@@ -54,10 +69,13 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #9ccdff; /* Lighter blue on hover */
+    color: #9ccdff;
 }
 
-/* Hero Section */
+/* =========================
+   Hero Section
+   ========================= */
+
 .hero {
     background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat top center;
     background-size: cover;
@@ -80,7 +98,10 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-/* Buttons */
+/* =========================
+   Buttons
+   ========================= */
+
 .button {
     background-color: #6eb6ff;
     color: #333;
@@ -95,7 +116,10 @@ header nav ul li a:hover {
     background-color: #9ccdff;
 }
 
-/* Listen/Watch Page */
+/* =========================
+   Listen / Watch Page
+   ========================= */
+
 .listen-watch {
     padding: 2rem 0;
     background-color: #f9f9f9;
@@ -130,12 +154,14 @@ header nav ul li a:hover {
 
 .media-item p {
     padding: 1rem;
-    font-size: 1rem;
     color: #444;
     text-align: left;
 }
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
+
 footer {
     background-color: #333;
     color: #ccc;
@@ -170,7 +196,7 @@ footer p {
     height: auto;
     border-radius: 8px;
     display: block;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Optional polish */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .bio-text {
@@ -181,7 +207,10 @@ footer p {
     margin-top: 0;
 }
 
-/* Mobile-friendly Bio Layout */
+/* =========================
+   Responsive Adjustments
+   ========================= */
+
 @media (max-width: 768px) {
     .bio-container {
         flex-direction: column;
