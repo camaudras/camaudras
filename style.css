@@ -77,9 +77,10 @@ header nav ul li a:hover {
    ========================= */
 
 .hero {
-    background: url('https://github.com/camaudras/camaudras/blob/main/Cam_Viola_Performing.JPG?raw=true') no-repeat top center;
+    background-image: url('https://raw.githubusercontent.com/camaudras/camaudras/main/Cam_Viola_Performing.JPG');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: center;
     height: 80vh;
     color: white;
     text-align: center;
@@ -96,6 +97,13 @@ header nav ul li a:hover {
 
 .hero p {
     margin-bottom: 2rem;
+}
+
+/* Desktop-only adjustment to prevent head cropping */
+@media (min-width: 768px) {
+    .hero {
+        background-position: center top;
+    }
 }
 
 /* =========================
