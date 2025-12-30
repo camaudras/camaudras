@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    font-weight: 400;
 }
 
 /* You can also apply Ramaraja to specific elements, for example: */
