@@ -275,7 +275,7 @@ footer p {
 
     .contact-section {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     .contact-section .bio-text {
