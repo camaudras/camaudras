@@ -242,3 +242,59 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   Mobile Adjustments
+   ========================= */
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .hero {
+        height: 50vh;
+        background-position: center center;
+    }
+
+    .bio-image {
+        margin-bottom: 20px;
+    }
+
+    .media-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   Desktop-only Contact Page Centering
+   ========================= */
+
+@media (min-width: 769px) {
+
+    .contact-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-section .bio-text {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .contact-section ul {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .form-container iframe {
+        max-width: 100%;
+    }
+}
