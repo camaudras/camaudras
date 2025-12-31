@@ -191,6 +191,10 @@ header nav ul li a.nav-contact:hover {
     margin-bottom: 1.5rem;
 }
 
+.contact-section h2 {
+    text-align: center;
+}
+
 .media-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
