@@ -128,6 +128,7 @@ header nav ul li a.nav-contact:hover {
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Ramaraja', serif; /* Match contact form labels */
     transition: background-color 0.3s;
 }
 
@@ -136,13 +137,13 @@ header nav ul li a.nav-contact:hover {
 }
 
 /* =========================
-   Floating Contact Button
+   Floating Contact Button (Bottom Right)
    ========================= */
 
 .floating-contact {
     position: fixed;
     bottom: 20px;
-    left: 20px;           /* Bottom-left corner */
+    right: 20px;
     background-color: #6eb6ff;
     color: #333;
     padding: 0.75rem 1.2rem;
@@ -164,7 +165,7 @@ header nav ul li a.nav-contact:hover {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
         bottom: 16px;
-        left: 16px;
+        right: 16px;
     }
 }
 
@@ -267,12 +268,14 @@ header nav ul li a.nav-contact:hover {
 
 .contact-section h2 {
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;      /* Larger like performance videos header */
+    color: #09537a;         /* Navy blue */
 }
 
 .contact-section ul {
     margin-top: 0.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .contact-icons {
@@ -298,7 +301,7 @@ header nav ul li a.nav-contact:hover {
 /* Contact Form */
 .contact-form {
     max-width: 600px;
-    margin: 2rem auto 0;
+    margin: 2rem auto 2.5rem;  /* Add spacing below form before footer */
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -333,6 +336,12 @@ header nav ul li a.nav-contact:hover {
 
 .form-row label {
     flex: 1;
+}
+
+/* Send Message Button matches form label font */
+.contact-form .button {
+    font-family: inherit;
+    font-weight: bold;
 }
 
 /* =========================
@@ -377,7 +386,6 @@ footer p {
         height: 50vh;
     }
 
-    /* Add mobile padding to contact section */
     .contact-section .bio-text {
         padding: 0 1rem;
     }
@@ -386,7 +394,6 @@ footer p {
         padding: 0 0.5rem;
     }
 
-    /* Stack first+last name on small screens */
     .form-row {
         flex-direction: column;
     }
@@ -412,4 +419,3 @@ footer p {
         padding-left: 0;
     }
 }
-
