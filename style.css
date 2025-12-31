@@ -156,6 +156,26 @@ header nav ul li a.nav-contact:hover {
     text-align: center;
 }
 
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icons a {
+    color: #09537a;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    color: #6eb6ff;
+    transform: translateY(-2px);
+}
+
 /* =========================
    Contact Form (NEW)
    ========================= */
