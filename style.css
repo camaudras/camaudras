@@ -161,7 +161,7 @@ header nav ul li a.nav-contact:hover {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-    margin: 0.75rem 0 1rem;
+    margin: 0.5rem 0 0.75rem;
 }
 
 .contact-icons a {
