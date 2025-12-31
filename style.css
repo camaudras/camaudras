@@ -136,6 +136,39 @@ header nav ul li a.nav-contact:hover {
 }
 
 /* =========================
+   Floating Contact Button
+   ========================= */
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;           /* Bottom-left corner */
+    background-color: #6eb6ff;
+    color: #333;
+    padding: 0.75rem 1.2rem;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.floating-contact:hover {
+    background-color: #9ccdff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .floating-contact {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        bottom: 16px;
+        left: 16px;
+    }
+}
+
+/* =========================
    Listen / Watch Page
    ========================= */
 
@@ -145,8 +178,7 @@ header nav ul li a.nav-contact:hover {
     text-align: center;
 }
 
-.listen-watch h2,
-.contact-section h2 {
+.listen-watch h2 {
     font-size: 2.5rem;
     color: #09537a;
     margin-bottom: 1.2rem;
@@ -154,7 +186,6 @@ header nav ul li a.nav-contact:hover {
 
 .media-gallery {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
 }
@@ -172,9 +203,10 @@ header nav ul li a.nav-contact:hover {
     text-align: center;
 }
 
-/* Desktop media gallery – restored two-column layout */
+/* Desktop media gallery: two columns */
 @media (min-width: 769px) {
     .media-gallery {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
@@ -235,9 +267,14 @@ header nav ul li a.nav-contact:hover {
 
 .contact-section h2 {
     text-align: center;
+    margin-bottom: 0.75rem;
 }
 
-/* Contact Icons */
+.contact-section ul {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
 .contact-icons {
     display: flex;
     justify-content: center;
@@ -375,3 +412,4 @@ footer p {
         padding-left: 0;
     }
 }
+
