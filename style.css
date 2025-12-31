@@ -149,8 +149,89 @@ header nav ul li a.nav-contact:hover {
 .contact-section h2 {
     font-size: 2.5rem;
     color: #09537a;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.media-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.media-item p {
+    padding: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Desktop media gallery – restored two-column layout */
+@media (min-width: 769px) {
+    .media-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* =========================
+   Responsive YouTube Iframes
+   ========================= */
+
+.responsive-iframe {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================
+   Bio Page
+   ========================= */
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.bio-image {
+    flex: 0 0 300px;
+}
+
+.bio-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bio-text {
+    flex: 1;
+}
+
+/* =========================
+   Contact Page
+   ========================= */
 
 .contact-section h2 {
     text-align: center;
@@ -160,15 +241,16 @@ header nav ul li a.nav-contact:hover {
 .contact-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1.25rem;
     margin: 0.5rem 0 0.75rem;
 }
 
 .contact-icons a {
     color: #09537a;
-    font-size: 2rem;
-    transition: color 0.3s, transform 0.2s;
+    font-size: 2.75rem;
     text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .contact-icons a:hover {
@@ -176,10 +258,7 @@ header nav ul li a.nav-contact:hover {
     transform: translateY(-2px);
 }
 
-/* =========================
-   Contact Form (NEW)
-   ========================= */
-
+/* Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 2rem auto 0;
@@ -209,7 +288,7 @@ header nav ul li a.nav-contact:hover {
     border-color: #6eb6ff;
 }
 
-/* First + Last name row */
+/* First + Last Name Row */
 .form-row {
     display: flex;
     gap: 1rem;
@@ -219,39 +298,10 @@ header nav ul li a.nav-contact:hover {
     flex: 1;
 }
 
-/* Mobile stacking */
 @media (max-width: 600px) {
     .form-row {
         flex-direction: column;
     }
-}
-
-/* =========================
-   Bio Page
-   ========================= */
-
-.bio-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-.bio-image {
-    flex: 0 0 300px;
-}
-
-.bio-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.bio-text {
-    flex: 1;
 }
 
 /* =========================
