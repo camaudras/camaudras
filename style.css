@@ -309,6 +309,20 @@ footer p {
     margin: 0;
 }
 
+/* Footer Instagram Icon */
+.instagram-link {
+    margin-left: 0.75rem;
+    color: #ccc;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.instagram-link:hover {
+    color: #9ccdff;
+    transform: translateY(-1px);
+}
+
 /* =========================
    Responsive Adjustments
    ========================= */
