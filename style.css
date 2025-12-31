@@ -184,7 +184,8 @@ header nav ul li a.nav-contact:hover {
     text-align: center;
 }
 
-.listen-watch h2 {
+.listen-watch h2,
+.contact-section h2 {
     font-size: 2.5rem;
     color: #09537a;
     margin-bottom: 1.5rem;
