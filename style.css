@@ -3,7 +3,7 @@
    ========================= */
 
 html {
-    font-size: 18px; /* Global baseline for entire site */
+    font-size: 18px;
 }
 
 body {
@@ -16,11 +16,10 @@ body {
 }
 
 p {
-    font-size: 1rem; /* Inherits from html = 18px */
+    font-size: 1rem;
     font-weight: 400;
 }
 
-/* Headings */
 h1, h2 {
     font-family: 'Ramaraja', serif;
 }
@@ -29,7 +28,6 @@ h1, h2 {
    Layout / Structure
    ========================= */
 
-/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -75,7 +73,6 @@ header nav ul li a:hover {
     color: #9ccdff;
 }
 
-/* Top nav Contact button */
 header nav ul li a.nav-contact {
     background-color: #6eb6ff;
     color: #333;
@@ -86,7 +83,6 @@ header nav ul li a.nav-contact {
 
 header nav ul li a.nav-contact:hover {
     background-color: #9ccdff;
-    color: #333;
 }
 
 /* =========================
@@ -102,7 +98,6 @@ header nav ul li a.nav-contact:hover {
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -116,7 +111,6 @@ header nav ul li a.nav-contact:hover {
     margin-bottom: 2rem;
 }
 
-/* Desktop-only adjustment to prevent head cropping */
 @media (min-width: 768px) {
     .hero {
         background-position: center top;
@@ -142,39 +136,6 @@ header nav ul li a.nav-contact:hover {
 }
 
 /* =========================
-   Floating Contact Button
-   ========================= */
-
-.floating-contact {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #6eb6ff;
-    color: #333;
-    padding: 0.75rem 1.2rem;
-    border-radius: 999px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.floating-contact:hover {
-    background-color: #9ccdff;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .floating-contact {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-        bottom: 16px;
-        right: 16px;
-    }
-}
-
-/* =========================
    Listen / Watch Page
    ========================= */
 
@@ -195,68 +156,53 @@ header nav ul li a.nav-contact:hover {
     text-align: center;
 }
 
-.media-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.media-item {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.media-item p {
-    padding: 1rem;
-    color: #444;
-    text-align: left;
-}
-
 /* =========================
-   Responsive YouTube Iframes
+   Contact Form (NEW)
    ========================= */
 
-.responsive-iframe {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    margin: 0 auto;
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
-.responsive-iframe iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
 }
 
-/* Desktop media gallery */
-@media (min-width: 769px) {
-    .media-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    }
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
 
-    .media-item {
-        flex: 0 1 45%;
-        display: flex;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #6eb6ff;
+}
+
+/* First + Last name row */
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row label {
+    flex: 1;
+}
+
+/* Mobile stacking */
+@media (max-width: 600px) {
+    .form-row {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .media-item p {
-        text-align: center;
     }
 }
 
@@ -280,18 +226,12 @@ header nav ul li a.nav-contact:hover {
 .bio-image img {
     width: 100%;
     max-width: 300px;
-    height: auto;
     border-radius: 8px;
-    display: block;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .bio-text {
     flex: 1;
-}
-
-.bio-text h2 {
-    margin-top: 0;
 }
 
 /* =========================
@@ -309,7 +249,6 @@ footer p {
     margin: 0;
 }
 
-/* Footer Instagram Icon */
 .instagram-link {
     margin-left: 0.75rem;
     color: #ccc;
@@ -331,20 +270,10 @@ footer p {
     .bio-container {
         flex-direction: column;
         align-items: center;
-        text-align: left;
     }
 
     .hero {
         height: 50vh;
-        background-position: center center;
-    }
-
-    .bio-image {
-        margin-bottom: 20px;
-    }
-
-    .media-gallery {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -366,15 +295,5 @@ footer p {
     .contact-section ul {
         list-style-position: inside;
         padding-left: 0;
-    }
-
-    .form-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-
-    .form-container iframe {
-        max-width: 100%;
     }
 }
