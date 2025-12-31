@@ -298,12 +298,6 @@ header nav ul li a.nav-contact:hover {
     flex: 1;
 }
 
-@media (max-width: 600px) {
-    .form-row {
-        flex-direction: column;
-    }
-}
-
 /* =========================
    Footer
    ========================= */
@@ -344,6 +338,20 @@ footer p {
 
     .hero {
         height: 50vh;
+    }
+
+    /* Add mobile padding to contact section */
+    .contact-section .bio-text {
+        padding: 0 1rem;
+    }
+
+    .contact-form {
+        padding: 0 0.5rem;
+    }
+
+    /* Stack first+last name on small screens */
+    .form-row {
+        flex-direction: column;
     }
 }
 
