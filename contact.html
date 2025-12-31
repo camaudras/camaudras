@@ -50,30 +50,40 @@
                 <!-- Native Contact Form -->
                 <div class="form-container">
                     <form
-                        action="https://formspree.io/f/xkogngyv"
-                        method="POST"
-                        class="contact-form"
-                    >
-                        <label>
-                            Name
-                            <input type="text" name="name" required>
-                        </label>
+    action="https://formspree.io/f/REPLACE_THIS_ID"
+    method="POST"
+    class="contact-form"
+>
+    <div class="form-row">
+        <label>
+            First Name
+            <input type="text" name="first-name" required>
+        </label>
 
-                        <label>
-                            Email
-                            <input type="email" name="email" required>
-                        </label>
+        <label>
+            Last Name
+            <input type="text" name="last-name" required>
+        </label>
+    </div>
 
-                        <label>
-                            Message
-                            <textarea name="message" rows="6" required></textarea>
-                        </label>
+    <label>
+        Email Address
+        <input type="email" name="email" required>
+    </label>
 
-                        <!-- Optional: helps email replies go to sender -->
-                        <input type="hidden" name="_replyto">
+    <label>
+        Subject
+        <input type="text" name="subject" required>
+    </label>
 
-                        <button type="submit" class="button">Send Message</button>
-                    </form>
+    <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <button type="submit" class="button">Send Message</button>
+</form>
+
                 </div>
             </div>
         </section>
