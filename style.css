@@ -337,7 +337,7 @@ footer p {
 .contact-section .bio-text {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left; /* Left-align Available for text and bullets */
+    text-align: left; /* Left-align text and bullets */
 }
 
 .contact-section .bio-text p,
@@ -449,5 +449,17 @@ footer p {
     /* Add small side margins on mobile for text and form */
     .contact-section .bio-text {
         margin: 0 0.5rem;
+    }
+
+    /* Ensure "Available for" text and bullets are left-aligned */
+    .contact-section .bio-text p,
+    .contact-section .bio-text ul {
+        text-align: left;
+    }
+
+    /* Remove any stray dash between icons */
+    .contact-icons a::before,
+    .contact-icons a::after {
+        content: none;
     }
 }
