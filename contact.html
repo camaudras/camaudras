@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/png" sizes="48x48" href="https://raw.githubusercontent.com/camaudras/camaudras/main/violin%20favicon.png">
-    <!-- FIXED FONT AWESOME LINK -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -47,18 +47,33 @@
                     <li>Elegant live performances for weddings and events in the Santa Barbara and Los Angeles areas</li>
                 </ul>
 
-                <!-- Embed Google Form -->
+                <!-- Native Contact Form -->
                 <div class="form-container">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdK_M2d2tW6d0qdAJFMNA2xMhYmK_tZZT_0vJMOt_eAXOlCDg/viewform?embedded=true"
-                        width="640"
-                        height="641"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
+                    <form
+                        action="https://formspree.io/f/xkogngyv"
+                        method="POST"
+                        class="contact-form"
                     >
-                        Loading…
-                    </iframe>
+                        <label>
+                            Name
+                            <input type="text" name="name" required>
+                        </label>
+
+                        <label>
+                            Email
+                            <input type="email" name="email" required>
+                        </label>
+
+                        <label>
+                            Message
+                            <textarea name="message" rows="6" required></textarea>
+                        </label>
+
+                        <!-- Optional: helps email replies go to sender -->
+                        <input type="hidden" name="_replyto">
+
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -74,12 +89,11 @@
                 rel="noopener noreferrer"
                 class="instagram-link"
                 aria-label="Cam Audras Viola on Instagram"
-                style="font-size: 1.5rem; color: inherit; margin-left: 10px;"
             >
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
     </footer>
-
 </body>
 </html>
+
