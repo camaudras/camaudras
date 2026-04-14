@@ -54,7 +54,7 @@ header {
     overflow: hidden;
 }
 
-/* Subtle music-inspired "staff lines" */
+/* Subtle music staff lines */
 header::before {
     content: "";
     position: absolute;
@@ -71,15 +71,18 @@ header::before {
     pointer-events: none;
 }
 
-/* Soft light effect for richness */
+/* Alto clef watermark */
 header::after {
     content: "";
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(circle at top center, rgba(255, 255, 255, 0.14), transparent 45%),
-        radial-gradient(circle at bottom right, rgba(110, 182, 255, 0.14), transparent 35%);
+    background-image: url("images/alto-clef-watermark.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140px auto;
+    opacity: 0.08;
     pointer-events: none;
+    filter: brightness(1.8);
 }
 
 header .container {
@@ -120,6 +123,36 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #9ccdff;
     transform: translateY(-1px);
+}
+
+/* Top nav Contact button */
+header nav ul li a.nav-contact {
+    background-color: #6eb6ff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header nav ul li a.nav-contact:hover {
+    background-color: #9ccdff;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0 1.25rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header::after {
+        background-size: 100px auto;
+        opacity: 0.07;
+    }
 }
 
 /* Top nav Contact button */
