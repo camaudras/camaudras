@@ -40,16 +40,59 @@ h1, h2 {
    Header / Navigation
    ========================= */
 
+/* =========================
+   Header / Navigation
+   ========================= */
+
 header {
-    background-color: #09537a;
+    position: relative;
+    background:
+        linear-gradient(135deg, #074766 0%, #09537a 45%, #0b628d 100%);
     color: white;
-    padding: 1.5rem 0;
+    padding: 1.75rem 0 1.5rem;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Subtle music-inspired "staff lines" */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.08) 0px,
+            rgba(255, 255, 255, 0.08) 1px,
+            transparent 1px,
+            transparent 18px
+        );
+    opacity: 0.22;
+    pointer-events: none;
+}
+
+/* Soft light effect for richness */
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at top center, rgba(255, 255, 255, 0.14), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(110, 182, 255, 0.14), transparent 35%);
+    pointer-events: none;
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 header nav ul {
@@ -58,21 +101,40 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
 }
 
 header nav ul li {
-    margin: 0 1rem;
+    margin: 0;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s, background-color 0.3s;
+    padding: 0.25rem 0.2rem;
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
 }
 
 header nav ul li a:hover {
     color: #9ccdff;
+    transform: translateY(-1px);
+}
+
+/* Top nav Contact button */
+header nav ul li a.nav-contact {
+    background-color: #6eb6ff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header nav ul li a.nav-contact:hover {
+    background-color: #9ccdff;
+    color: #333;
 }
 
 /* Top nav Contact button */
