@@ -114,7 +114,7 @@
         }
 
         /* =========================
-           Teaching Photo
+           Main Teaching Photo
            ========================= */
 
         .teaching-photo {
@@ -193,39 +193,79 @@
         }
 
         /* =========================
-           Testimonial
+           Ella Testimonial Feature
            ========================= */
 
-        .testimonial {
-            margin: 2.5rem 0 0;
-            padding: 1.75rem 2rem;
+        .testimonial-feature {
+            margin: 2.75rem 0 0;
+            overflow: hidden;
             background-color: #eef6fc;
             border-left: 5px solid #6eb6ff;
-            border-radius: 6px;
+            border-radius: 8px;
         }
 
-        .testimonial blockquote {
+        .testimonial-layout {
+            display: grid;
+            grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+            align-items: stretch;
+        }
+
+        .testimonial-photo {
+            margin: 0;
+            background-color: #dcecf7;
+        }
+
+        .testimonial-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 390px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .testimonial-photo figcaption {
+            display: none;
+        }
+
+        .testimonial-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .testimonial-label {
+            margin-bottom: 0.6rem;
+            color: #09537a;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .testimonial-copy blockquote {
             margin: 0;
             color: #333;
-            font-size: 1.05rem;
-            line-height: 1.75;
+            font-size: 1.04rem;
+            line-height: 1.7;
         }
 
-        .testimonial footer {
-            margin-top: 0.9rem;
+        .testimonial-copy footer {
+            margin-top: 1rem;
             padding: 0;
             color: #09537a;
             background: transparent;
             text-align: left;
         }
 
-        .testimonial footer a {
+        .testimonial-copy footer a {
             color: #09537a;
             font-weight: bold;
             text-decoration: none;
         }
 
-        .testimonial footer a:hover {
+        .testimonial-copy footer a:hover {
             color: #0b628d;
             text-decoration: underline;
         }
@@ -323,8 +363,18 @@
                 columns: 1;
             }
 
-            .testimonial {
-                padding: 1.4rem;
+            .testimonial-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-photo img {
+                height: auto;
+                min-height: 0;
+                max-height: 500px;
+            }
+
+            .testimonial-copy {
+                padding: 1.5rem;
             }
         }
     </style>
@@ -577,39 +627,66 @@
                         </li>
                     </ul>
 
-                    <aside
-                        class="testimonial"
-                        aria-label="Student testimonial"
+                    <section
+                        class="testimonial-feature"
+                        aria-labelledby="ella-testimonial-heading"
                     >
-                        <blockquote>
-                            “Cam has been my viola teacher for nearly four years,
-                            and I am so grateful for both his specialized viola
-                            expertise and his supportive, cheerful demeanor. It
-                            is rare to find someone who can be an incredible
-                            mentor and a kind friend at the same time. When I
-                            became principal viola for the Santa Barbara Youth
-                            Symphony, the pressure was on. Cam helped me break
-                            down the intricacies of challenging repertoire and
-                            made it all seem completely doable. He constantly
-                            pushes me to grow, involving me in regional
-                            scholarships and inviting me to perform alongside
-                            him in professional settings, like the Santa Barbara
-                            Chamber Music. I highly recommend Cam to anyone at
-                            any music level.”
-                        </blockquote>
+                        <div class="testimonial-layout">
 
-                        <footer>
-                            —
-                            <a
-                                href="https://mindfulstrings.org"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Ella
-                            </a>,
-                            private viola student
-                        </footer>
-                    </aside>
+                            <figure class="testimonial-photo">
+                                <img
+                                    src="Cam_Ella_photo.jpeg"
+                                    alt="Cam Audras and viola student Ella holding their instruments together"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    Cam Audras with longtime viola student Ella.
+                                </figcaption>
+                            </figure>
+
+                            <div class="testimonial-copy">
+                                <p
+                                    class="testimonial-label"
+                                    id="ella-testimonial-heading"
+                                >
+                                    Student Testimonial
+                                </p>
+
+                                <blockquote>
+                                    “Cam has been my viola teacher for nearly four
+                                    years, and I am so grateful for both his
+                                    specialized viola expertise and his
+                                    supportive, cheerful demeanor. It is rare to
+                                    find someone who can be an incredible mentor
+                                    and a kind friend at the same time. When I
+                                    became principal viola for the Santa Barbara
+                                    Youth Symphony, the pressure was on. Cam
+                                    helped me break down the intricacies of
+                                    challenging repertoire and made it all seem
+                                    completely doable. He constantly pushes me
+                                    to grow, involving me in regional
+                                    scholarships and inviting me to perform
+                                    alongside him in professional settings, like
+                                    the Santa Barbara Chamber Music. I highly
+                                    recommend Cam to anyone at any music level.”
+                                </blockquote>
+
+                                <footer>
+                                    —
+                                    <a
+                                        href="https://mindfulstrings.org"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Ella
+                                    </a>,
+                                    private viola student
+                                </footer>
+                            </div>
+
+                        </div>
+                    </section>
 
                     <h3>Lesson Details</h3>
 
