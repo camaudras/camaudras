@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Santa Barbara Viola Lessons | Cam Audras, viola</title>
+    <meta
+        name="description"
+        content="Private viola lessons in downtown Santa Barbara with Westmont College viola faculty member Cam Audras. Lessons for beginners, youth orchestra students, advancing violists, adults, and violinists transitioning to viola."
+    >
+    <link rel="canonical" href="https://camaudras.com/teaching.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://raw.githubusercontent.com/camaudras/camaudras/main/violin%20favicon.png">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="48x48"
+        href="https://raw.githubusercontent.com/camaudras/camaudras/main/violin%20favicon.png"
+    >
+
     <style>
+        /* =========================
+           Teaching Page
+           ========================= */
+
         .teaching-section {
             padding: 3rem 0;
             background-color: #f9f9f9;
@@ -19,8 +39,8 @@
         .teaching-content {
             max-width: 900px;
             margin: 0 auto;
+            padding: 2.75rem;
             background: #fff;
-            padding: 2.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -31,35 +51,165 @@
         }
 
         .teaching-content h2 {
+            margin: 0 0 0.75rem;
             font-size: 2.5rem;
+            line-height: 1.15;
             text-align: center;
-            margin-top: 0;
-            margin-bottom: 1rem;
         }
 
         .teaching-content h3 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
+            margin: 2.25rem 0 0.65rem;
+            font-size: 1.65rem;
+            line-height: 1.2;
         }
 
         .teaching-content p {
-            margin-bottom: 1rem;
-        }
-
-        .teaching-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
+            margin: 0 0 1rem;
         }
 
         .teaching-intro {
+            max-width: 760px;
+            margin: 0 auto 2rem;
             text-align: center;
-            margin-bottom: 2rem;
+        }
+
+        .teaching-intro .teaching-subtitle {
+            margin-bottom: 1.25rem;
+            color: #555;
+            font-size: 1.08rem;
+        }
+
+        .teaching-intro .button {
+            display: inline-block;
+            margin-top: 0.25rem;
+        }
+
+        .teaching-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0 0;
+        }
+
+        .teaching-highlight {
+            padding: 1.15rem 1.25rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #6eb6ff;
+            border-radius: 4px;
+        }
+
+        .teaching-highlight h4 {
+            margin: 0 0 0.3rem;
+            color: #09537a;
+            font-size: 1.15rem;
+        }
+
+        .teaching-highlight p {
+            margin: 0;
+            color: #444;
+        }
+
+        .teaching-list {
+            margin: 0 0 1.25rem;
+            padding-left: 1.4rem;
+        }
+
+        .teaching-list li {
+            margin-bottom: 0.4rem;
+        }
+
+        .credentials-list {
+            columns: 2;
+            column-gap: 2.5rem;
+        }
+
+        .credentials-list li {
+            break-inside: avoid;
+        }
+
+        .testimonial {
+            margin: 2.5rem 0 0;
+            padding: 1.75rem 2rem;
+            background-color: #eef6fc;
+            border-left: 5px solid #6eb6ff;
+            border-radius: 6px;
+        }
+
+        .testimonial blockquote {
+            margin: 0;
+            color: #333;
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+
+        .testimonial footer {
+            margin-top: 0.9rem;
+            padding: 0;
+            color: #09537a;
+            background: transparent;
+            text-align: left;
+        }
+
+        .testimonial footer a {
+            color: #09537a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .testimonial footer a:hover {
+            color: #0b628d;
+            text-decoration: underline;
+        }
+
+        .lesson-details {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+
+        .lesson-detail {
+            padding: 1.15rem;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .lesson-detail i {
+            display: block;
+            margin-bottom: 0.45rem;
+            color: #09537a;
+            font-size: 1.35rem;
+        }
+
+        .lesson-detail strong {
+            display: block;
+            color: #09537a;
+        }
+
+        .lesson-detail span {
+            color: #555;
         }
 
         .teaching-cta {
+            margin-top: 2.5rem;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
             text-align: center;
-            margin-top: 2rem;
+        }
+
+        .teaching-cta h3 {
+            margin-top: 0;
+        }
+
+        .teaching-cta p {
+            max-width: 650px;
+            margin: 0 auto 1.25rem;
+        }
+
+        .teaching-cta .button {
+            display: inline-block;
         }
 
         @media (max-width: 768px) {
@@ -74,19 +224,54 @@
             .teaching-content h2 {
                 font-size: 2rem;
             }
+
+            .teaching-highlights,
+            .lesson-details {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials-list {
+                columns: 1;
+            }
+
+            .testimonial {
+                padding: 1.4rem;
+            }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Private Viola Lessons in Santa Barbara",
+        "description": "Individualized private viola instruction for beginning through advanced students in downtown Santa Barbara.",
+        "provider": {
+            "@type": "Person",
+            "name": "Cam Audras",
+            "url": "https://camaudras.com/",
+            "jobTitle": "Violist and Viola Instructor"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Santa Barbara"
+        },
+        "serviceType": "Private viola instruction",
+        "url": "https://camaudras.com/teaching.html"
+    }
+    </script>
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Cam Audras, viola</h1>
-            <nav>
+            <nav aria-label="Primary navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="bio.html">Bio</a></li>
                     <li><a href="listen-watch.html">Media</a></li>
-                    <li><a href="teaching.html">Lessons</a></li>
+                    <li><a href="teaching.html" aria-current="page">Lessons</a></li>
                     <li><a href="contact.html" class="nav-contact">Contact</a></li>
                 </ul>
             </nav>
@@ -99,57 +284,167 @@
                 <div class="teaching-content">
                     <div class="teaching-intro">
                         <h2>Santa Barbara Viola Lessons</h2>
-                        <p>
-                            I offer thoughtful, individualized viola instruction for students of all ages and levels in downtown Santa Barbara.
-                            My teaching is rooted in strong fundamentals, a holistic approach emphasizing a healthy instrument-body relationship, and a genuine love of music-making.
+                        <p class="teaching-subtitle">
+                            Private viola instruction in downtown Santa Barbara for beginning
+                            through advanced students.
                         </p>
+                        <p>
+                            I offer thoughtful, individualized lessons designed to help students
+                            develop a healthy technique, a rich and confident sound, strong
+                            musicianship, and a lasting enjoyment of music. As a viola faculty
+                            member at Westmont College and an active professional violist, I bring
+                            specialized knowledge of the instrument to students at every stage.
+                        </p>
+                        <a href="contact.html" class="button">Schedule an Introductory Lesson</a>
+                    </div>
+
+                    <h3>Who I Teach</h3>
+                    <p>
+                        I welcome children, teens, and adults, including students beginning the
+                        viola for the first time and experienced players seeking more focused
+                        technical or musical guidance.
+                    </p>
+
+                    <div class="teaching-highlights">
+                        <div class="teaching-highlight">
+                            <h4>Beginning Violists</h4>
+                            <p>
+                                A supportive introduction to setup, tone, rhythm, note-reading, and
+                                productive practice habits.
+                            </p>
+                        </div>
+
+                        <div class="teaching-highlight">
+                            <h4>Youth Orchestra Students</h4>
+                            <p>
+                                Preparation for auditions, seating, orchestra repertoire,
+                                sight-reading, and confident ensemble playing.
+                            </p>
+                        </div>
+
+                        <div class="teaching-highlight">
+                            <h4>Advancing Students</h4>
+                            <p>
+                                Detailed work on solo repertoire, technique, excerpts, performance
+                                preparation, and college or festival auditions.
+                            </p>
+                        </div>
+
+                        <div class="teaching-highlight">
+                            <h4>Violinists Transitioning to Viola</h4>
+                            <p>
+                                Specialized help with alto clef, instrument setup, tone production,
+                                bow weight, and the distinct musical role of the viola.
+                            </p>
+                        </div>
                     </div>
 
                     <h3>Teaching Philosophy</h3>
                     <p>
-                        I believe every student learns differently, and I strive to create a lesson environment that is supportive, challenging,
-                        and encouraging. My goal is to help students build a strong technical foundation while also developing confidence,
-                        musical curiosity, and an expressive personal voice.
+                        I believe every student learns differently, and I strive to create a lesson
+                        environment that is supportive, focused, and appropriately challenging. My
+                        goal is to help students build a strong technical foundation while also
+                        developing confidence, musical curiosity, and an expressive personal voice.
                     </p>
                     <p>
-                        In lessons, I emphasize posture and setup, tone production, intonation, rhythm, and efficient practice habits.
-                        I want students not only to improve, but to understand <em>how</em> to improve so they can become thoughtful,
-                        independent musicians over time.
+                        Lessons emphasize a healthy instrument-body relationship, including
+                        comfortable posture and setup, efficient movement, resonant tone production,
+                        reliable intonation, rhythm, and practical practice strategies. I want
+                        students not only to improve, but to understand <em>how</em> to improve so
+                        they can become thoughtful and increasingly independent musicians.
                     </p>
                     <p>
-                        Whether a student is preparing for youth orchestra, working on solo repertoire, learning the basics for the first time,
-                        or simply hoping to enjoy music more deeply, I aim to meet them where they are and help them grow steadily and joyfully.
+                        Whether a student is preparing for youth orchestra, developing solo
+                        repertoire, learning the basics for the first time, or returning to music as
+                        an adult, I aim to meet them where they are and help them grow steadily and
+                        joyfully.
                     </p>
+
+                    <h3>What Students Can Work Toward</h3>
+                    <ul class="teaching-list">
+                        <li>A comfortable and sustainable playing setup</li>
+                        <li>A fuller, more resonant viola sound</li>
+                        <li>Improved intonation, rhythm, and bow control</li>
+                        <li>More effective and independent practice habits</li>
+                        <li>Greater confidence in auditions and performances</li>
+                        <li>Preparation for school, youth orchestra, festival, or college auditions</li>
+                        <li>Growth through solo, chamber, and orchestral repertoire</li>
+                    </ul>
 
                     <h3>Experience</h3>
                     <p>
-                        I have over 10 years of teaching experience and have worked with a wide range of students in private lessons,
-                        chamber music settings, sectionals, and festival programs.
+                        I have more than 10 years of teaching experience and have worked with
+                        students in private lessons, sectionals, chamber music, youth orchestra, and
+                        festival settings. My professional performance work also informs my teaching,
+                        helping students connect technical development with expressive, confident
+                        music-making.
                     </p>
-                    <ul>
-                        <li>Viola Professor at Westmont College</li>
+
+                    <ul class="teaching-list credentials-list">
+                        <li>Viola faculty at Westmont College</li>
                         <li>Teaching artist with the Santa Barbara Youth Symphony</li>
                         <li>Coaching experience with Santa Barbara Strings</li>
-                        <li>Faculty at the Lyceum Oaks Summerfest, CSU Channel Islands</li>
-                        <li>Over a decade of experience in private teaching</li>
+                        <li>Faculty at the Lyceum Oaks Summerfest</li>
+                        <li>More than a decade of private teaching experience</li>
+                        <li>Professional orchestral, chamber, and freelance performance experience</li>
                     </ul>
+
+                    <aside class="testimonial" aria-label="Student testimonial">
+                        <blockquote>
+                            “Cam has been my viola teacher for nearly four years, and I am so
+                            grateful for both his specialized viola expertise and his supportive,
+                            cheerful demeanor. It is rare to find someone who can be an incredible
+                            mentor and a kind friend at the same time. When I became principal viola
+                            for the Santa Barbara Youth Symphony, the pressure was on. Cam helped me
+                            break down the intricacies of challenging repertoire and made it all seem
+                            completely doable. He constantly pushes me to grow, involving me in
+                            regional scholarships and inviting me to perform alongside him in
+                            professional settings, like the Santa Barbara Chamber Music. I highly
+                            recommend Cam to anyone at any music level.”
+                        </blockquote>
+                        <footer>
+                            — <a
+                                href="https://mindfulstrings.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Ella</a>, private viola student
+                        </footer>
+                    </aside>
+
+                    <h3>Lesson Details</h3>
                     <p>
-                        My work as a performer also deeply informs my teaching. As an active professional violist, I bring real-world experience
-                        from orchestral, chamber, and freelance performance into my lessons, helping students connect their technical work to
-                        expressive and confident playing.
+                        Weekly lessons are available in 30-, 45-, and 60-minute formats. The most
+                        appropriate length depends on the student’s age, experience, and goals.
                     </p>
 
-                    <h3>Who I Teach</h3>
-                    <p>
-                        I welcome students all levels, from beginning and intermediate violists to more advanced students seeking
-                        support with auditions, orchestra repertoire, and solo literature.
-                    </p>
+                    <div class="lesson-details">
+                        <div class="lesson-detail">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <strong>Location</strong>
+                            <span>Downtown Santa Barbara</span>
+                        </div>
+
+                        <div class="lesson-detail">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <strong>Lesson Length</strong>
+                            <span>30, 45, or 60 minutes</span>
+                        </div>
+
+                        <div class="lesson-detail">
+                            <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+                            <strong>Students</strong>
+                            <span>Children, teens, and adults</span>
+                        </div>
+                    </div>
 
                     <div class="teaching-cta">
+                        <h3>Interested in Lessons?</h3>
                         <p>
-                            Interested in lessons? I would love to hear from you.
+                            Use the contact form to share the student’s age, experience, current
+                            repertoire, and goals. I would be happy to discuss availability and help
+                            determine the best lesson format.
                         </p>
-                        <a href="contact.html" class="button">Contact Cam</a>
+                        <a href="contact.html" class="button">Contact Cam About Lessons</a>
                     </div>
                 </div>
             </div>
@@ -162,8 +457,14 @@
         <div class="container">
             <p>
                 &copy; 2026 Cam Audras
-                <a href="https://www.instagram.com/cam.audras.viola/" class="instagram-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
+                <a
+                    href="https://www.instagram.com/cam.audras.viola/"
+                    class="instagram-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                 </a>
             </p>
         </div>
